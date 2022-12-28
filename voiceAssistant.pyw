@@ -60,6 +60,9 @@ txt=Label(top,text="Press Button and Speak")
 top.title("Voice Assistant")
 top.resizable(0,0)
 
+# change form icon
+# top.iconbitmap('C:/icon/icon.ico')
+
 # Label
 text = Label(top,text="1) Open Google",font=("Helvetica", 12), fg="green")
 text.place(x=10,y=10)
@@ -141,5 +144,5 @@ def comnd():
         speak("Command not found")
     top.title("Voice Assistant")
     query=""
-Button(top, text = 'Press & Speak',activeforeground = "black",activebackground = "pink",pady = 10, command=comnd,font=("Helvetica", 10), fg="maroon").pack(side=BOTTOM)
+Button(top, text = 'Press & Speak',activeforeground = "black",activebackground = "pink",pady = 10, command=comnd,font=("Helvetica", 10), fg="maroon").pack(side=BOTTOM,pady=10)
 top.mainloop()
